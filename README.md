@@ -19,6 +19,16 @@ Open:
 - Demo target page: `http://localhost:3000/demo`
 - Widget script: `http://localhost:3000/widget/loader.js`
 
+## Screenshots
+
+| Landing page | Demo target |
+| --- | --- |
+| ![Landing page](docs/screenshots/landing.png) | ![Demo target](docs/screenshots/demo.png) |
+
+| Admin login |
+| --- |
+| ![Admin login](docs/screenshots/login.png) |
+
 Admin access is protected by a signed HTTP-only session cookie. Configure these values before showing the project:
 
 ```env
