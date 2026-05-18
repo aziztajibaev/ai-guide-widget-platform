@@ -54,14 +54,6 @@ Without a configured key, the backend uses deterministic fallback rules and mark
 
 The AI receives only sanitized page metadata plus enabled knowledge documents from the admin site. Documents are site manuals for terminology, page behavior, and workflow rules. The AI does not receive input values, password fields, token fields, or the full DOM. It generates the next visual step from the current screen and completed steps; the widget never clicks or fills fields for the user.
 
-For Gemini demo mode:
-
-```env
-AI_PROVIDER="gemini"
-GEMINI_API_KEY="your-local-key"
-GEMINI_MODEL="gemini-2.5-flash"
-```
-
 ## Sandbox Preview Server
 
 If `next dev` is blocked by process restrictions, use the dependency-light preview server:
