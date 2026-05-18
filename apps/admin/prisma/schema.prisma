@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id        String      @id @default(cuid())
+  publicId  String      @unique
+  name      String
+  domain    String?
+  activeAiProvider String?
+  theme     Json
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  users     User[]
+  guides    GuideRule[]
+  documents KnowledgeDocument[]
+  events    GuideEvent[]
+  aiProviders AiProviderCredential[]
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  projectId    String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  project      Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model GuideRule {
+  id         String   @id @default(cuid())
+  projectId  String
+  slug       String
+  title      String
+  intent     String
+  aliases    Json
+  urlPattern String?
+  enabled    Boolean  @default(true)
+  steps      Json
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, slug])
+}
+
+model GuideEvent {
+  id        String   @id @default(cuid())
+  projectId String
+  type      String
+  guideSlug String?
+  stepIndex Int?
+  path      String?
+  metadata  Json?
+  createdAt DateTime @default(now())
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model KnowledgeDocument {
+  id        String   @id @default(cuid())
+  projectId String
+  title     String
+  content   String
+  tags      Json
+  enabled   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model AiProviderCredential {
+  id              String   @id @default(cuid())
+  projectId       String
+  provider        String
+  encryptedApiKey String
+  keyHint         String
+  model           String
+  enabled         Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, provider])
+}

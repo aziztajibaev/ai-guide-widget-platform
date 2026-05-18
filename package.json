@@ -1,0 +1,28 @@
+{
+  "name": "ai-guide-widget-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/admin run dev",
+    "preview": "node scripts/preview-server.mjs",
+    "build": "npm --workspace packages/widget run build && npm --workspace apps/admin run build",
+    "build:widget": "npm --workspace packages/widget run build",
+    "docs:import:tilda": "node scripts/import-tilda-docs.mjs",
+    "lint": "npm --workspace apps/admin run lint",
+    "typecheck": "npm --workspace apps/admin run typecheck && npm --workspace packages/widget run typecheck",
+    "test": "npm --workspace packages/widget run test",
+    "prisma:generate": "npm --workspace apps/admin run prisma:generate",
+    "prisma:push": "npm --workspace apps/admin run prisma:push",
+    "db:seed": "npm --workspace apps/admin run db:seed"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "optionalDependencies": {
+    "@next/swc-win32-x64-msvc": "^15.5.15"
+  }
+}

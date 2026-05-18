@@ -1,0 +1,74 @@
+{
+  "users": [],
+  "projects": [
+    {
+      "id": "project_demo_internal",
+      "publicId": "demo-project",
+      "name": "Northstar Retail Demo",
+      "domain": "localhost",
+      "theme": {
+        "accent": "#2563eb",
+        "robotBaseUrl": "/robot",
+        "robotAssetFormat": "png",
+        "logoText": "smartup"
+      },
+      "createdAt": "2026-04-30T00:00:00.000Z",
+      "updatedAt": "2026-04-30T00:00:00.000Z"
+    }
+  ],
+  "guides": [],
+  "documents": [
+    {
+      "id": "doc_demo_overview",
+      "projectId": "project_demo_internal",
+      "title": "Northstar Retail demo overview",
+      "content": "This demo project is a working retail operations workspace. The visible modules are Users, Sales orders, Inventory, and Reports. Users practice with the Smartup Guide widget by asking for help inside the demo page. Useful requests include: How do I add a new user? Create a sales order. Show low stock products. Export the weekly report. The assistant should point to visible controls and keep the user inside the demo project.",
+      "tags": ["demo", "overview", "practice", "workspace"],
+      "enabled": true,
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-05-07T00:00:00.000Z"
+    },
+    {
+      "id": "doc_demo_users_workflow",
+      "projectId": "project_demo_internal",
+      "title": "User management workflow",
+      "content": "Use this knowledge for questions about adding users, searching users, filtering users, roles, access, and user status. To add a teammate, open Users, click Create user, fill Full name, Email, Role, and Region, then click Save user. To search for a teammate, use the Search users field. To filter access, use Role filter and Status filter. Path: Users -> Create user. Path: Users -> Search users. Path: Users -> Role filter. Path: Users -> Status filter.",
+      "tags": ["users", "create user", "roles", "filters", "access"],
+      "enabled": true,
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-05-07T00:00:00.000Z"
+    },
+    {
+      "id": "doc_demo_orders_workflow",
+      "projectId": "project_demo_internal",
+      "title": "Sales order workflow",
+      "content": "Use this knowledge for questions about sales orders, customer orders, drafts, picking, fulfillment, and order creation. To create a sales order, open Sales orders, click Create order, fill Customer, Product, Quantity, and Owner, then click Save order. To filter orders by state, use Order status filter. Path: Sales orders -> Create order. Path: Sales orders -> Order status filter.",
+      "tags": ["orders", "sales", "create order", "customer", "fulfillment"],
+      "enabled": true,
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-05-07T00:00:00.000Z"
+    },
+    {
+      "id": "doc_demo_inventory_workflow",
+      "projectId": "project_demo_internal",
+      "title": "Inventory control workflow",
+      "content": "Use this knowledge for inventory, stock, low stock, SKU, products, and restocking questions. To find low stock products, open Inventory and click Low stock. To update stock, click Restock product, choose Product SKU, enter Quantity to add, then click Save stock update. Path: Inventory -> Low stock. Path: Inventory -> Restock product.",
+      "tags": ["inventory", "stock", "low stock", "restock", "sku"],
+      "enabled": true,
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-05-07T00:00:00.000Z"
+    },
+    {
+      "id": "doc_demo_reports_workflow",
+      "projectId": "project_demo_internal",
+      "title": "Reports workflow",
+      "content": "Use this knowledge for reporting, weekly report, revenue, order readiness, low stock totals, and exports. To export the weekly report, open Reports and click Export report. The Reports module shows Revenue, Orders ready, and Low stock cards. Path: Reports -> Export report.",
+      "tags": ["reports", "export", "weekly report", "metrics"],
+      "enabled": true,
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-05-07T00:00:00.000Z"
+    }
+  ],
+  "events": [],
+  "aiProviders": []
+}

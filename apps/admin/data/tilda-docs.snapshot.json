@@ -1,0 +1,37 @@
+{
+  "projectId": "demo-project",
+  "seeds": [
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/osnovnye-nastrojki-sistemy",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/vizit/prikreplenie-spravochnikov-k-organizacii",
+    "https://smartup-doc.tilda.ws/ru/kak-nastroit-rabochuyu-zonu",
+    "https://smartup-doc.tilda.ws/ru/kak-planirovat-vizity",
+    "https://smartup-doc.tilda.ws/ru/nastrojki-tmc",
+    "https://smartup-doc.tilda.ws/ru/sklad"
+  ],
+  "visited": 20,
+  "pages": 18,
+  "documents": 24,
+  "failed": 0,
+  "failedPages": [],
+  "importedUrls": [
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/osnovnye-nastrojki-sistemy",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/vizit/prikreplenie-spravochnikov-k-organizacii",
+    "https://smartup-doc.tilda.ws/ru/kak-nastroit-rabochuyu-zonu",
+    "https://smartup-doc.tilda.ws/ru/kak-planirovat-vizity",
+    "https://smartup-doc.tilda.ws/ru/nastrojki-tmc",
+    "https://smartup-doc.tilda.ws/ru/sklad",
+    "https://smartup-doc.tilda.ws/ru/bystry-start",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/vhod-v-sistemu",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-sozdat-organizaciyu",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/vnesenie-spravochnika-tms",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-dobavit-cenu-i-ustanovit-ceny-na-tms",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-sozdat-tip-fotootchetov",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-sozdat-tip-videootchetov",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-sozdat-kommentarij",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/prikreplenie-spravochnikov-k-organizacii",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-dobavit-v-sistemu-novogo-polzovatelya",
+    "https://smartup-doc.tilda.ws/ru/bystry-start/kak-dobavit-sklad",
+    "https://smartup-doc.tilda.ws/ru/bystryj-start/kak-dobavit-kassu"
+  ],
+  "importedAt": "2026-04-30T12:47:22.100Z"
+}

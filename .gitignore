@@ -1,0 +1,16 @@
+node_modules
+.npm-cache
+.run
+.next
+dist
+coverage
+.env
+.env.*
+!.env.example
+.env.local
+*.db
+*.db-journal
+*.tsbuildinfo
+apps/admin/prisma/dev.db
+apps/admin/data/store.local.json
+apps/admin/public/widget/loader.js.map
