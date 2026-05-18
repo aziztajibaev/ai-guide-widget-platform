@@ -33,9 +33,17 @@ Open:
 | --- | --- |
 | ![Admin preview](docs/screenshots/landing-admin-preview.png) | ![Chat preview](docs/screenshots/landing-chat-preview.png) |
 
-| Admin login |
-| --- |
-| ![Admin login](docs/screenshots/login.png) |
+| Admin overview | AI provider catalog |
+| --- | --- |
+| ![Admin overview](docs/screenshots/admin-overview.png) | ![AI provider catalog](docs/screenshots/admin-ai-providers.png) |
+
+| Knowledge base | Widget install |
+| --- | --- |
+| ![Knowledge base](docs/screenshots/admin-knowledge.png) | ![Widget install](docs/screenshots/admin-widget-install.png) |
+
+| Project settings | Runtime events |
+| --- | --- |
+| ![Project settings](docs/screenshots/admin-settings.png) | ![Runtime events](docs/screenshots/admin-events.png) |
 
 Admin access is protected by a signed HTTP-only session cookie. Configure these values before showing the project:
 
