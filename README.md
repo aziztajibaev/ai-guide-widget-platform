@@ -21,9 +21,17 @@ Open:
 
 ## Screenshots
 
-| Landing page | Demo target |
+| Landing hero | Demo target with widget |
 | --- | --- |
 | ![Landing page](docs/screenshots/landing.png) | ![Demo target](docs/screenshots/demo.png) |
+
+| Feature cards | Workflow |
+| --- | --- |
+| ![Feature cards](docs/screenshots/landing-features.png) | ![Workflow](docs/screenshots/landing-workflow.png) |
+
+| Admin preview | Chat preview |
+| --- | --- |
+| ![Admin preview](docs/screenshots/landing-admin-preview.png) | ![Chat preview](docs/screenshots/landing-chat-preview.png) |
 
 | Admin login |
 | --- |
